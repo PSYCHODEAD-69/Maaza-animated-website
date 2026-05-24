@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maaza &mdash; Taste the Mango</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:wght@300;400;600;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">maaza</a>
+  <ul class="nav-links">
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#why">Why Maaza</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Find Us</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobileMenu()">Our Story</a>
+  <a href="#products" onclick="closeMobileMenu()">Products</a>
+  <a href="#why" onclick="closeMobileMenu()">Why Maaza</a>
+  <a href="#testimonials" onclick="closeMobileMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMobileMenu()">Find Us</a>
+</div>
+
+<!-- HERO SCROLL ANIMATION SECTION -->
+<section class="hero-scroll-wrapper" id="heroWrapper">
+  <div class="hero-sticky">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-overlay">
+      <!-- Hero text: visible at start, disappears on first scroll -->
+      <div class="hero-text" id="heroText">
+        <p class="hero-tagline">India's No. 1 Mango Drink</p>
+        <h1 class="hero-title">Pure Mango<br><span>Magic</span></h1>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item">&#x1F96D; Real Mango Goodness <span class="marquee-dot"></span></div>
+    <div class="marquee-item">No Artificial Colors <span class="marquee-dot"></span></div>
+    <div class="marquee-item">&#x1F33F; Refreshing Since 1976 <span class="marquee-dot"></span></div>
+    <div class="marquee-item">India's Favourite Drink <span class="marquee-dot"></span></div>
+    <div class="marquee-item">&#x1F96D; Taste of Summer <span class="marquee-dot"></span></div>
+    <div class="marquee-item">100% Pure Mango Pulp <span class="marquee-dot"></span></div>
+    <div class="marquee-item">&#x1F96D; Real Mango Goodness <span class="marquee-dot"></span></div>
+    <div class="marquee-item">No Artificial Colors <span class="marquee-dot"></span></div>
+    <div class="marquee-item">&#x1F33F; Refreshing Since 1976 <span class="marquee-dot"></span></div>
+    <div class="marquee-item">India's Favourite Drink <span class="marquee-dot"></span></div>
+    <div class="marquee-item">&#x1F96D; Taste of Summer <span class="marquee-dot"></span></div>
+    <div class="marquee-item">100% Pure Mango Pulp <span class="marquee-dot"></span></div>
+  </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+  <div class="about-image-wrap reveal-left">
+    <img src="https://i.ibb.co/PZMyzL5J/Ultra-realistic-cinematic-product-shot-of-202605232355-jpeg-202605241625.jpg">
+    <div class="about-badge">
+      <span class="about-badge-year">'76</span>
+      <span class="about-badge-text">Since</span>
+    </div>
+  </div>
+  <div class="about-content">
+    <p class="section-label reveal">Our Heritage</p>
+    <h2 class="section-title reveal">The Authentic Taste of <span>Mango</span> Since 1976</h2>
+    <p class="section-body reveal">Maaza is more than just a drink &mdash; it is a feeling. What started as a dream in 1976 has grown into India's most beloved mango beverage. Every bottle carries the richness of real mango pulp, bursting with the natural, fresh, and pure goodness of sun-ripened mangoes straight from Indian orchards.</p>
+    <div class="about-stats">
+      <div class="stat-box reveal">
+        <div class="stat-num">48+</div>
+        <div class="stat-label">Years of Legacy</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-num">#1</div>
+        <div class="stat-label">Mango Drink in India</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Real Mango Pulp</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-num">1B+</div>
+        <div class="stat-label">Happy Fans</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section class="products-section" id="products">
+  <div class="products-header">
+    <p class="section-label reveal">Our Range</p>
+    <h2 class="section-title reveal">A <span>Maaza</span> for Every Moment</h2>
+  </div>
+  <div class="products-grid">
+    <div class="product-card reveal">
+      <div class="product-card-badge">Bestseller</div>
+      <span class="product-emoji">&#x1F96D;</span>
+      <div class="product-vol">200ml</div>
+      <div class="product-name">Maaza Mango Classic</div>
+      <div class="product-desc">Perfect for on-the-go. Real mango goodness in a handy size for school, office, or travel.</div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-card-badge">Popular</div>
+      <span class="product-emoji">&#x1F9C3;</span>
+      <div class="product-vol">600ml</div>
+      <div class="product-name">Maaza Mango Large</div>
+      <div class="product-desc">Share the joy! Ideal for family meals, picnics, and celebrations with loved ones.</div>
+    </div>
+    <div class="product-card reveal">
+      <span class="product-emoji">&#x1F379;</span>
+      <div class="product-vol">1.2L</div>
+      <div class="product-name">Maaza Party Pack</div>
+      <div class="product-desc">For the big gatherings. Keep the whole crew refreshed with India's most loved mango drink.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MAAZA -->
+<section class="why-section" id="why">
+  <div class="why-header">
+    <p class="section-label reveal">What Sets Us Apart</p>
+    <h2 class="section-title reveal">Why Choose <span>Maaza?</span></h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon">&#x1F96D;</div>
+      <div class="why-title">100% Real Mango</div>
+      <div class="why-text">Authentic Alphonso mango pulp in every bottle &mdash; no artificial flavoring, just pure natural mango taste the way nature intended.</div>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">&#x1F6AB;</div>
+      <div class="why-title">No Artificial Colors</div>
+      <div class="why-text">We believe in complete transparency. No synthetic dyes or additives &mdash; only the beautiful natural orange of real mangoes.</div>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">&#x1F33F;</div>
+      <div class="why-title">Farm Fresh Goodness</div>
+      <div class="why-text">Sourced directly from India's finest orchards &mdash; every bottle is a promise of freshness, quality, and unmatched natural flavor.</div>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">&#x1F3C6;</div>
+      <div class="why-title">Award-Winning Taste</div>
+      <div class="why-text">Decades of trust and countless awards &mdash; generations of Indians have made Maaza their most cherished mango drink.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section" id="contact">
+  <p class="cta-label reveal">Feel the Season</p>
+  <h2 class="cta-title reveal">Taste the<br>Summer. &#x1F96D;</h2>
+  <p class="cta-subtitle reveal">Every sip holds the essence of a sun-drenched orchard, a ripe mango tree, and the warmth of summer memories.</p>
+  <div class="cta-buttons reveal">
+    <a href="#products" class="btn-primary">Shop Now</a>
+    <a href="#about" class="btn-outline">Our Story</a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="testimonials-header">
+    <p class="section-label reveal">Fan Love</p>
+    <h2 class="section-title reveal">India Loves <span>Maaza!</span></h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="stars">✮✮✮✮✮</div>
+      <p class="testimonial-text">I have been drinking Maaza since childhood. On every hot afternoon, a cold Maaza is all I need. Nothing compares to that authentic mango taste &mdash; no other drink can replace it!</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">R</div>
+        <div>
+          <div class="author-name">Riya Sharma</div>
+          <div class="author-city">Mumbai, Maharashtra</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars">✮✮✮✮✮</div>
+      <p class="testimonial-text">A Maaza after lunch is absolutely mandatory at our office! Everyone here is a fan. It is so incredibly refreshing &mdash; one bottle completely wipes away the fatigue of a long day.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">A</div>
+        <div>
+          <div class="author-name">Arjun Mehta</div>
+          <div class="author-city">Delhi, NCR</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars">✮✮✮✮✮</div>
+      <p class="testimonial-text">With kids at home, Maaza is always stocked in our fridge. The natural ingredients and real mango make it the best choice for the whole family. Pure love in every bottle!</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">P</div>
+        <div>
+          <div class="author-name">Priya Nair</div>
+          <div class="author-city">Bangalore, Karnataka</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="gallery-header">
+    <p class="section-label reveal">Moments with Maaza</p>
+    <h2 class="section-title reveal">Every <span>Special</span> Moment</h2>
+  </div>
+  <div class="gallery-scroll" id="galleryScroll">
+    <div class="gallery-item">
+      <span class="gallery-emoji"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-oJmUaXu1XISg04SM4aYfDY0Mq44LX1CU0TpPbD0RN0fZ_CC8UVF6LCc&s=10"></span>
+      <div class="gallery-item-text">Hot Afternoon Companion</div>
+    </div>
+    <div class="gallery-item">
+      <span class="gallery-emoji"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnXS4jiqqMfpaj3iZkp2oERCGQgjd36fUG_RbCNY6-8Vn-dqdlAl-W_2w&s=10"></span>
+      <div class="gallery-item-text">Family Time</div>
+    </div>
+    <div class="gallery-item">
+      <span class="gallery-emoji"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7IV7M9OxQsPBivsAGTPl7rtDX1RednrHfDOuIAuZz8DEHo5CuMC0TraU&s=10"></span>
+      <div class="gallery-item-text">Celebrations</div>
+    </div>
+      <div class="gallery-item">
+      <span class="gallery-emoji"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0R0hOhNPGDeqUGGggXAKsgWRZZSI3kDlkMQtAdFlewYEDBxaIp5NLoA4&s=10"></span>
+      <div class="gallery-item-text">Morning Freshness</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div>
+      <span class="footer-brand-logo">maaza</span>
+      <p class="footer-brand-text">India's most beloved mango drink. From 1976 to today, Maaza has been a part of every home's story. Real Mango. Real Moments. Real India.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Instagram">&#x1F4F8;</a>
+        <a href="#" class="social-link" aria-label="Facebook">&#x1F4D8;</a>
+        <a href="#" class="social-link" aria-label="Twitter">&#x1F426;</a>
+        <a href="#" class="social-link" aria-label="YouTube">&#x25B6;&#xFE0F;</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul class="footer-links">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul class="footer-links">
+        <li><a href="#products">Maaza Classic</a></li>
+        <li><a href="#products">Maaza Large</a></li>
+        <li><a href="#products">Party Pack</a></li>
+        <li><a href="#">Where to Buy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul class="footer-links">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2024 Maaza. A Coca-Cola India Product. All rights reserved.</span>
+    <span class="footer-made">Made with love for <span>&#x1F96D;</span> in India</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
